@@ -27,7 +27,7 @@ try:
             numeros = list(range(limite_inferior, (limite_superior + 1)))
             print(numeros)
             print(
-                f"La suma de los números pares de la lista ingresada es: {numeros_pares(numeros)}")
+                f"La suma de los números pares entre {limite_inferior} y {limite_superior} es: {numeros_pares(numeros)}")
 except Exception as e:
     # except Exception as e: # Si se quiere capturar cualquier tipo de error.
     print(f"Se produjo la excepción {e}")
