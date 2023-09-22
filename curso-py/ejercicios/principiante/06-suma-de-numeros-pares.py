@@ -4,7 +4,7 @@ def numeros_pares(numeros):
     for numero in numeros:
         if numero % 2 == 0:
             pares.append(numero)
-    print(pares)
+    print(f"Números pares: {pares}")
     return suma_pares(pares)
 
 
@@ -25,7 +25,7 @@ try:
         if limite_superior != "salir":
             print(f"Número ingresado: {limite_superior}")
             numeros = list(range(limite_inferior, (limite_superior + 1)))
-            print(numeros)
+            print(f"Números ingresados: {numeros}")
             print(
                 f"La suma de los números pares entre {limite_inferior} y {limite_superior} es: {numeros_pares(numeros)}")
 except Exception as e:
