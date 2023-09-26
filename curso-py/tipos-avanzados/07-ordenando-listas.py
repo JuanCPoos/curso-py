@@ -22,10 +22,15 @@ print(usuarios)
 
 usuarios = [["Chanchito", 4], ["Felipe", 1], ["Pulga", 5]]
 
-
+'''
 def ordena(elemento):
     return elemento[1]
 
-
 usuarios.sort(key=ordena)
+'''
+
+# Ordenamiento con el uso de expresiones lambda
+# usuarios.sort(key=lambda parametro:valorRetorno)
+usuarios.sort(key=lambda el: el[1])
+
 print(usuarios)
