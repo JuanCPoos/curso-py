@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Formulario</title>
+    <title>Document</title>
     <link rel="stylesheet" href="main.css" type="text/css" />
 </head>
 
 <body>
     <div class="caja">
-        <h4>Por favor llena este formulario para ponerte en contacto con nosotros</h4>
+        <h4>Muchas gracias! </h4>
         <fieldset>
             <legend>Datos de contacto</legend>
             <form class="formulario" action="contacto.html">
@@ -25,12 +25,21 @@
                 <textarea placeholder="algo para comentarnos"></textarea>
                 <!-- Boton -->
                 <br />
-                <button>Aceptar</button>
+                <!--Vovler una página atrás-->
+                <button onclick="inicio()">ir al inicio</button>
+                <button onclick="regresar()">Volver atrás</button>
             </form>
-
         </fieldset>
-    </div>
 
+    </div>
+    <script>
+        function inicio() {
+            window.location.href = 'index.html'
+        }
+        function regresar() {
+            window.history.back() //retrocede una página en el historial de navegación
+        }
+    </script>
 </body>
 
 </html>
