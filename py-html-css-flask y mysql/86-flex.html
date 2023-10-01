@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="flex">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+</body>
+
+<style>
+    body {
+        width: 200px;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /* propiedad para no exceder el tamaño, en este caso del body 200px*/
+        flex-flow: row wrap;
+        /* direccion row y lo que no alcanza se va a la linea de abajo*/
+    }
+</style>
+
+</html>

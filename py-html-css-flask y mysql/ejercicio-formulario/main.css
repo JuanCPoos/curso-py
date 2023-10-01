@@ -14,18 +14,22 @@ body {
 }
 
 .caja {
-    margin: auto;
+    margin: 0 auto;
     align-items: center;
     justify-content: center;
 }
 
 .formulario {
     padding: 5px;
+    display: flex;
+    flex-direction: column;
+
 }
 
 fieldset {
     background-color: #fff;
     box-shadow: 2px 2px 2px;
+
 }
 
 fieldset:hover {
@@ -39,6 +43,7 @@ h4 {
 }
 
 input {
+    width: auto;
     padding: 3px 0;
     margin: 5px 0;
 }
