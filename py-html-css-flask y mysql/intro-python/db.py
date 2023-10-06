@@ -1,8 +1,15 @@
 '''db'''
 import mysql.connector
 
-mysql.connector.connect(
+midb = mysql.connector.connect(
     host="localhost",
-    user='chanchitofeliz',
-    password='holamundo'
+    user='root',
+    password='coqui20alter',
+    database='prueba'
 )
+cursor = midb.cursor()
+
+cursor.execute('select * from Usuario')
+
+resultado = cursor.fetchall()
+print(resultado)
