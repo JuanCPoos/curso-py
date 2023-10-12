@@ -2,6 +2,7 @@
 import mysql.connector
 
 import click  # para ejecutar comandos en terminal
+
 from flask import current_app, g
 from flask.cli import with_appcontext
 from .schema import instructions
@@ -30,7 +31,7 @@ def init_db():
     db, c = get_db()
 
     for i in instructions:
-        c.execute()
+        c.execute(i)
 
     db.commit()
 
@@ -44,3 +45,4 @@ def init_db_command():
 
 def init_app(app):  # cada que se realice una petición a flask y devuelva el resultado llamara a close_db y cerrara la conexión
     app.teardown_appcontext(close_db)
+    app.cli.add_command(init_db_command)

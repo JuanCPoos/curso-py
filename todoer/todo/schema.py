@@ -1,3 +1,4 @@
+'''instrucciones schema'''
 instructions = [
     'SET FOREIGN_KEY_CHECKS=0',
     'DROP TABLE IF EXISTS todo',
@@ -7,7 +8,7 @@ instructions = [
     CREATE TABLE user(
         id INT PRIMARY KEY AUTO_INCREMENT,
         username VARCHAR(50) UNIQUE NOT NULL, 
-        password VARCHAR(50) NOT NULL,
+        password VARCHAR(50) NOT NULL
     )
     ''',
     '''
