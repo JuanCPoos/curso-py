@@ -21,4 +21,4 @@ long_contraseña = input('Especifique la longitud de la contraseña a crear')
 caracteres_especiales = input(
     'Para incluir caracteres especiales, indique: may, min, num y/o simb')
 
-generar_contrasena(long_contraseña, may)
+generar_contrasena()
